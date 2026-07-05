@@ -1,0 +1,6 @@
+{
+  "name": "Health Sync & Logger",
+  "description": "Log daily metrics, manage multi-device sync protocols across iOS and Android, and view historic sync audits in a local database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

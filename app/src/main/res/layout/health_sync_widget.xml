@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#1E293B">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HEAL SYNC MONITOR"
+            android:textColor="#10B981"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widget_shield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛡️ SHIELDED"
+            android:textColor="#10B981"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:background="#155E75"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widget_status_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_layout"
+        android:layout_marginTop="8dp"
+        android:text="System Tracker Protection: ACTIVE"
+        android:textColor="#E2E8F0"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/widget_last_sync_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_status_title"
+        android:layout_marginTop="4dp"
+        android:text="Latest Event: Loading..."
+        android:textColor="#94A3B8"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/widget_sso_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_last_sync_title"
+        android:layout_marginTop="4dp"
+        android:text="SSO Multipurpose Connection: Secure Linked"
+        android:textColor="#38BDF8"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/widget_intercept_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Trackers Blocked: 0"
+        android:textColor="#F43F5E"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
